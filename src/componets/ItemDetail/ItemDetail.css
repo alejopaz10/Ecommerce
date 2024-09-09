@@ -1,0 +1,34 @@
+.CardItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    background-color: #fff;
+}
+
+.Header {
+    margin-bottom: 12px;
+}
+
+.ItemHeader {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.ItemImg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.Info {
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+.ItemFooter {
+    margin-top: 12px;
+}

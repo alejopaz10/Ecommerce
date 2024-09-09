@@ -1,0 +1,77 @@
+.item-list {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-around;
+    padding: 20px; 
+    overflow-x: auto; 
+}
+
+.item-list::-webkit-scrollbar {
+    display: none; 
+}
+
+.item-list .card-item {
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan y asegura que no se ajusten */
+    margin: 10px; /* Espacio alrededor de cada tarjeta */
+
+}
+.CardItem {
+    display: flex;
+    flex-direction: column; /* Los elementos dentro de la tarjeta estarán en una columna */
+    align-items: center; /* Centra los elementos horizontalmente dentro de la tarjeta */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 10px; /* Espacio alrededor de la tarjeta */
+    padding: 16px; /* Espacio interno de la tarjeta */
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    background-color: #fff; /* Fondo blanco */
+    transition: transform 0.2s; /* Animación suave para efectos de hover */
+    text-align: center; /* Centramos el texto dentro de la tarjeta */
+}
+
+.CardItem:hover {
+    transform: scale(1.03); /* Efecto de escala en hover */
+}
+
+.header {
+    margin-bottom: 12px; /* Espacio debajo del encabezado */
+}
+
+.ItemHeader {
+    font-size: 1.5em; /* Tamaño de fuente grande para el encabezado */
+    color: #333; /* Color del texto */
+}
+
+.ItemImg {
+    width: 100%; /* Imagen al 100% del ancho del contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    border-radius: 4px; /* Bordes redondeados en la imagen */
+    max-height: 200px; /* Altura máxima para la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área */
+}
+
+.Info {
+    font-size: 1.2em; /* Tamaño de fuente mayor para la información */
+    color: #555; /* Color de texto para la información */
+    margin: 8px 0; /* Espacio arriba y abajo del párrafo */
+}
+
+.ItemFooter {
+    margin-top: 12px; /* Espacio arriba del pie de página */
+}
+
+.Option {
+    padding: 10px 20px; /* Espacio dentro del botón */
+    font-size: 1em; /* Tamaño de fuente del botón */
+    color: #fff; /* Color del texto del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.Option:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro en hover */
+}
